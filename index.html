@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <lin rel="icon" type="image/png" href="img/techis-logo.png"></lin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <title>Portfolio</title>
-  <link href='Style.css' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+      <link href='Style.css' rel='stylesheet'>
+    
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -32,7 +36,7 @@
     </div>
   </nav>
   <div id="about">
-    <h2><span class="font-primary">A</span>bout</h2>
+    <h2><span class="font-secondary">About</span></h2>
     <img src="img/profilepic.jpg">
     <div class="name">Sara Guo</div>
     <div class="vocation"> Web Application Developer</div>
@@ -40,7 +44,7 @@
       Docker(Basics)</Express>
     </div>
     <p>
-      Hi there! I'm Sara.
+      Hi there! I'm Sara. Currently a student at Tech I.S. On my free time I like to learn coding, play video games and watch movies.
     </p>
     <div class="email">xsarax3@hotmail.com</div>
     <div class="icons">
@@ -50,17 +54,32 @@
   </div>
 
 <div id="project">
-    <h2><span class="font-primary">P</span>roject</h2>
+    <h2><span class="font-secondary">Projects</span></h2>
 
-    <div class="card mb-3"></div>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="img/project-twitter.png" class="img-fluid rounded-start" alt="Twitter Project">
-      </div>
-      <div class="col-md-8">
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="img/twitter-project.png" class="img-fluid rounded-start" alt="Twitter Project">
         <div class="card-body">
           <h5 class="card-title">Twitter Clone</h5>
-          <p class="card-text">This is a twitter base project.</p>
+          <p class="card-text">This is a Twitter base project.</p>
+          <p class="card-text"><small class="text-muted"style>
+            Test Login Account <br>
+            Email: test@gmail.com <br>
+            password: 1234
+          </small></p>
+        <a href="#" target="_blank" class="btn btn-secondary">Website Link</a>
+        <a href="#" target="_blank" class="btn btn-secondary">Github Link</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/project-netflix.png" class="img-fluid round-start" alt="Netflix Project">
+        <div class="card-body">
+          <h5 class="card-title">Netflix Clone</h5>
+          <p class="card-text">This is a Netflix base project.</p>
           <p class="card-text"><small class="text-muted">
               Test Login Account <br>
               Email: test@gmail.com <br>
@@ -68,31 +87,42 @@
             </small></p>
           <a href="#" target="_blank" class="btn btn-secondary">Website Link</a>
           <a href="#" target="_blank" class="btn btn-secondary">Github Link</a>
-        </div>
+          </div>
       </div>
     </div>
-  
-
-  <div class="card mb-3"></div>
-  <div class="row">
-    <div class="col-md-4">
-      <img src="img/project-netflix.png" class="img-fluid round-start" alt="Netflix Project">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Netflix Clone</h5>
-        <p class="card-text">This is a Netflix base project.</p>
-        <p class="card-text"><small class="text-muted">
+    <div class="col">
+      <div class="card">
+        <img src="img/Tetris clone.png" class="card-img-top" class="img-fluid rounded-start" alt="Game Project">
+        <div class="card-body">
+          <h5 class="card-title">Game Clone</h5>
+          <p class="card-text">This is a Gaming base project.</p>
+          <p class="card-text"><small class="text-muted"style>
             Test Login Account <br>
             Email: test@gmail.com <br>
             password: 1234
           </small></p>
         <a href="#" target="_blank" class="btn btn-secondary">Website Link</a>
         <a href="#" target="_blank" class="btn btn-secondary">Github Link</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/website.png" class="card-img-top" class="img-fluid rounded-start" alt= "Website Project">
+        <div class="card-body">
+          <h5 class="card-title">Website Clone</h5>
+          <p class="card-text">This is a Website base project.</p>
+          <p class="card-text"><small class="text-muted"style>
+            Test Login Account <br>
+            Email: test@gmail.com <br>
+            password: 1234
+          </small></p>
+        <a href="#" target="_blank" class="btn btn-secondary">Website Link</a>
+        <a href="#" target="_blank" class="btn btn-secondary">Github Link</a>
+        </div>
       </div>
     </div>
   </div>
-
 
 
 
