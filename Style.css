@@ -4,23 +4,20 @@ COMMON
 
 *********/
 
+
 body{
     font-family: "monospace",sans-serif;
-    background-color: #ded4ed;
+    background: url(img/background.jpeg);
     font-weight: bold;
     cursor: url(img/egg.png), auto;
 }
 
-.font-primary{
-    color: #945ae7;
-}
-
 .font-secondary{
     font-size: 26px;
-    background: linear-gradient(90deg,#ae00ff 10%,#da7dd9);
+    background: linear-gradient(90deg,#a604f1 10%,#f699f5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Oleo Script Swash Caps', monospace;}
+    font-family: 'Oleo Script Swash Caps', monospace;
 }
 
 .title-icon{
@@ -32,15 +29,43 @@ p{
     font-size: 14px;
 }
 
-h2{
+.font-secondary{
     font-weight: bold;
-    font-size: 23px;
-    margin-bottom: 20px;
+    font-size: 30px;
 }
 
-a.font-black{
-    color: #000 !important;
+h2{
+    margin-bottom: 35px;
 }
+
+.font-white{
+    color: rgb(162, 94, 173) !important;
+}
+
+/****   NavBar ****/
+
+.font-primary{
+    color: #945ae7;
+    font-size: 35px;
+}
+
+.color-white{
+    color: white;
+    font-size: 20px;
+}
+a.purple{
+    color:#c188dc !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url(img/menu.png) !important;
+  }
+
+.about-me-img, .project-img{
+    width:25px;
+    text-align:center;
+}
+
 
 /*********
 
@@ -49,9 +74,11 @@ ABOUT
 **********/
 
 #about {
-    margin: 60px auto;
-    max-width: 400px;
+    margin: 105px auto;
+    margin-bottom: 200px;
+    max-width: 450px;
     text-align: center;
+    color: white;
 }
 
 #about img{
@@ -62,18 +89,27 @@ ABOUT
 
 #about .name{
     font-size: 19px;
+    margin-bottom: 20px;
 }
 
 #about .vocation{
-    font-size: 17px;
-    color: #A8A8AB;
-    margin-bottom: 10px;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 5s forwards;
+    color: rgb(239, 157, 248);
 }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 
 #about .skills{
     font-size: 14px;
     color: #945ae7;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 #about .email{
@@ -90,30 +126,47 @@ ABOUT
     color:#000;
 }
 
+
 /*********
 
 PROJECT
 
 **********/
 
-#project{
-    margin: 60px auto;
-    width: 80%;
+.cards{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    grid-gap: 20px;
+    border: #c188dc;
 }
 
 #project h2{
     text-align: center;
 }
 
-#project .card img {
-    width: 100%; 
-    height: 250px;
+
+.card img{  
+    width: 100%;
+    height: 300px;
 }
 
 #project .card-title{
     font-weight: bold;
 }
 
+.card-body{
+    background-color: #c188dc;
+}
+
 #project .cardtext{
     text-align: center;
+}
+
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
 }

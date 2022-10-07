@@ -14,22 +14,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
       <link href='Style.css' rel='stylesheet'>
-    
+</head>    
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-black">
     <div class="container-fluid">
-      <a class="navbar-brand title-icon" href="#"><span class='font-primary'>P</span>ortfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navToggler">
+      <a class="navbar-brand title-icon" href="#"><span class='font-primary'>P</span><span class='color-white'>ortfolio</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ms-auto mb-2">
           <li class="nav-item">
-            <a class="nav-link font-black" href="#about">About</a>
+            <a class="nav-link purple" href="#about"><img class = "about-me-img" src="img/aboutme.png">  About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link font-black" href="#projects">Projects</a>
+            <a class="nav-link purple" href="#project"><img class = "project-img" src="img/projects.png">  Projects</a>
           </li>
 
       </div>
@@ -44,7 +44,7 @@
       Docker(Basics)</Express>
     </div>
     <p>
-      Hi there! I'm Sara. Currently a student at Tech I.S. On my free time I like to learn coding, play video games and watch movies.
+      Hi there! I'm Sara. Currently a student at Tech I.S. On my free time I like to learn coding, travel, play video games, watch movies and eating all kinds of good foods!
     </p>
     <div class="email">xsarax3@hotmail.com</div>
     <div class="icons">
@@ -53,77 +53,64 @@
     </div>
   </div>
 
-<div id="project">
+  <div id="project">
     <h2><span class="font-secondary">Projects</span></h2>
 
-
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    <div class="col">
-      <div class="card">
-        <img src="img/twitter-project.png" class="img-fluid rounded-start" alt="Twitter Project">
-        <div class="card-body">
-          <h5 class="card-title">Twitter Clone</h5>
-          <p class="card-text">This is a Twitter base project.</p>
-          <p class="card-text"><small class="text-muted"style>
-            Test Login Account <br>
-            Email: test@gmail.com <br>
-            password: 1234
-          </small></p>
-        <a href="#" target="_blank" class="btn btn-secondary">Website Link</a>
-        <a href="#" target="_blank" class="btn btn-secondary">Github Link</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="img/project-netflix.png" class="img-fluid round-start" alt="Netflix Project">
-        <div class="card-body">
-          <h5 class="card-title">Netflix Clone</h5>
-          <p class="card-text">This is a Netflix base project.</p>
-          <p class="card-text"><small class="text-muted">
-              Test Login Account <br>
-              Email: test@gmail.com <br>
-              password: 1234
-            </small></p>
-          <a href="#" target="_blank" class="btn btn-secondary">Website Link</a>
-          <a href="#" target="_blank" class="btn btn-secondary">Github Link</a>
+      <div class="cards">
+        <article class = "card">
+          <img src="img/Hunger-captain.png" class="img-fluid rounded-start" alt="Hunger-captain">
+          <div class="card-body">
+            <h5 class="card-title">Hunger Captain</h5>
+            <p class="card-text">This is an online food menu service for Hunger Captain. Customers are able to view the menu and prices as well as add the items to the cart!</p>
+            <p class="card-text"><small class="text-muted"style></small>
+            <a href="https://sara-sd-frontend.herokuapp.com/" target="_blank" class="btn btn-secondary">Website Link</a>
+            <a href="https://github.com/xsarax3/hunger-captain" target="_blank" class="btn btn-secondary">Github Link</a>
           </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="img/Tetris clone.png" class="card-img-top" class="img-fluid rounded-start" alt="Game Project">
-        <div class="card-body">
-          <h5 class="card-title">Game Clone</h5>
-          <p class="card-text">This is a Gaming base project.</p>
-          <p class="card-text"><small class="text-muted"style>
-            Test Login Account <br>
-            Email: test@gmail.com <br>
-            password: 1234
-          </small></p>
-        <a href="#" target="_blank" class="btn btn-secondary">Website Link</a>
-        <a href="#" target="_blank" class="btn btn-secondary">Github Link</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="img/website.png" class="card-img-top" class="img-fluid rounded-start" alt= "Website Project">
-        <div class="card-body">
-          <h5 class="card-title">Website Clone</h5>
-          <p class="card-text">This is a Website base project.</p>
-          <p class="card-text"><small class="text-muted"style>
-            Test Login Account <br>
-            Email: test@gmail.com <br>
-            password: 1234
-          </small></p>
-        <a href="#" target="_blank" class="btn btn-secondary">Website Link</a>
-        <a href="#" target="_blank" class="btn btn-secondary">Github Link</a>
-        </div>
-      </div>
-    </div>
-  </div>
+        </article>
 
+        <article  class="card">
+          <img src="img/twitter-project.png" class="img-fluid rounded-start" alt="Twitter Project">
+          <div class="card-body">
+            <h5 class="card-title">Twitter Clone</h5>
+            <p class="card-text">This is a Twitter base project. Users are able to add comments and share pictures as well as leave likes to comments they think are interesting!</p>
+            <p class="card-text"><small class="text-muted"style> </small>
+            <a href="https://dashboard.heroku.com/apps/sara-twitter-clone" target="_blank" class="btn btn-secondary">Website Link</a>
+            <a href="https://github.com/xsarax3/Portfolio" target="_blank" class="btn btn-secondary">Github Link</a>
+          </div>
+        </article>
+   
+        <article class ="card">
+          <img src="img/todo-list-app.png" class="img-fluid round-start" alt="To Do List">
+          <div class="card-body">
+            <h5 class="card-title">To Do List</h5>
+            <p class="card-text">This is a app for making a to do list for everyday daily use.</p>
+            <p class="card-text"><small class="text-muted"style></small>
+            <a href="https://sara-react-todo-app.herokuapp.com/" target="_blank" class="btn btn-secondary">Website Link</a>
+            <a href="https://github.com/xsarax3/React_Todo_App" target="_blank" class="btn btn-secondary">Github Link</a>
+          </div>
+        </article>
+      
+        <article class ="card">
+          <img src="img/Counter-app.png" class="img-fluid rounded-start" alt="Counter App">
+          <div class="card-body">
+            <h5 class="card-title">Counter App</h5>
+            <p class="card-text">This is a mini counting app created using react, redux.</p>
+            <p class="card-text"><small class="text-muted"style></small>
+            <a href="https://github.com/xsarax3/Counter-react-redux" target="_blank" class="btn btn-secondary">Github Link</a>
+          </div>
+        </article>
+  
+        <article class ="card">
+          <img src="img/Stopwatch.png" class="img-fluid rounded-start" alt="Java Project">
+          <div class="card-body">
+            <h5 class="card-title">Java Mini Project</h5>
+            <p class="card-text">This is a mini project created using Java.</p>
+            <p class="card-text"><small class="text-muted"style></small>
+            <a href="https://github.com/xsarax3/JavaMiniProject" target="_blank" class="btn btn-secondary">Github Link</a>
+          </div>
+        </article>
+      </div>
+  </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -131,5 +118,4 @@
     crossorigin="anonymous"></script>
 
 </body>
-
 </html>
