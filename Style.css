@@ -147,10 +147,10 @@ PROJECT
     text-align: center;
   }
 
-.row, .col{
+#project .cards .row, #project .cards .col{
     width: 100%;
     background-color: transparent;
-    border: #945ae7 !important;
+    border-color: #945ae7 !important;
   }
 
 #project .col-md-4{
