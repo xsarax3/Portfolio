@@ -138,40 +138,57 @@ PROJECT
 
 **********/
 
-.cards{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
-    grid-gap: 20px;
-    border: #c188dc;
-}
+#project {
+    margin: 60px auto;
+    width: 80%;
+  }
 
-#project h2{
+#project h2 {
     text-align: center;
+  }
+
+#project .card {
+    width: 100%;
+    background-color: transparent;
+    border-color: #945ae7 !important;
+  }
+
+#project .col-md-4{
+    margin-top: 8px;
+    margin-bottom: 1px;
+  }
+
+#project .card img {
+    width: 100%;
+    height: 80%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:  1rem;
+  margin-top: 1rem;
+  }
+
+#project .col-md-8{
+    margin-top: 25px;
+    margin-bottom: 1rem;
 }
 
+#project .card-title {
+    font-weight: bold;
+    color: aqua;
+  }
 
-.card img{  
+#project p{
+    color:#8c96f3;
+}
+
+#project a{
+    background-color:rgb(130, 159, 232);
+}
+
+.project-video {
     width: 100%;
     height: 300px;
-}
-
-#project .card-title{
-    font-weight: bold;
-}
-
-.card-body{
-    background-color: #c188dc;
-}
-
-#project .cardtext{
-    text-align: center;
-}
-
-
-.card {
-    display: grid;
-    grid-template-rows: max-content 200px 1fr;
-}
+    background-color: black;
+  }
+  
