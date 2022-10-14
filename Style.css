@@ -166,7 +166,7 @@ PROJECT
     background-color: #578ad1;
 }
 
-.vid {
+#project .vid {
     margin-top: 1rem;
     width: 100%;
     height: 300px;
